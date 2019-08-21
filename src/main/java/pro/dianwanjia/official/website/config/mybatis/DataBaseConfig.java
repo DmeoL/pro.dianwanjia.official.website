@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnResource;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
@@ -30,7 +31,7 @@ import javax.sql.DataSource;
  */
 @Configuration
 @ConditionalOnClass(DataSourceInitializer.class)
-//@ConditionalOnResource(resources = "classpath:mybatis-mybatis-mapper/*.xml")
+//@ConditionalOnResource(resources = "classpath:mybatis-mapper/*.xml")
 public class DataBaseConfig {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(DataBaseConfig.class);
@@ -80,11 +81,11 @@ public class DataBaseConfig {
         SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
         bean.setDataSource(dbDataSource);
         try {
-            Resource[] resources = new PathMatchingResourcePatternResolver().getResources("classpath:mybatis-mybatis-mapper/*" +
+            Resource[] resources = new PathMatchingResourcePatternResolver().getResources("classpath:mybatis-mapper/*" +
                     ".xml");
             if (resources != null) {
                 bean.setMapperLocations(resources);
-                LOGGER.info("set mybatis-mybatis-mapper resources:{}", resources);
+                LOGGER.info("set mybatis-mapper resources:{}", resources);
             }
         } catch (Exception e) {
         }

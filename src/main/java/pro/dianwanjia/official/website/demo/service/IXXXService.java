@@ -1,5 +1,8 @@
 package pro.dianwanjia.official.website.demo.service;
 
+import pro.dianwanjia.official.website.demo.model.Tdemo;
+import pro.dianwanjia.official.website.util.Base.ResultVO;
+
 /**
  * @author LX
  * @version V1.0.0
@@ -8,5 +11,6 @@ package pro.dianwanjia.official.website.demo.service;
  */
 public interface IXXXService {
 
+    ResultVO<Tdemo> getTdemo();
 
 }
