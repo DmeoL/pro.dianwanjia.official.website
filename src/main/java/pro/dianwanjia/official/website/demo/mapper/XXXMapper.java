@@ -1,7 +1,6 @@
 package pro.dianwanjia.official.website.demo.mapper;
 
 
-import org.apache.ibatis.annotations.Mapper;
 import pro.dianwanjia.official.website.demo.model.Tdemo;
 
 /**
@@ -10,7 +9,6 @@ import pro.dianwanjia.official.website.demo.model.Tdemo;
  * @description: 
  * @version V1.0.0
  */
-//@Mapper
 public interface XXXMapper {
     Tdemo select();
 }
