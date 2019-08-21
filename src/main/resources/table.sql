@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS `t_demo` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `text` varchar(50) DEFAULT '1' COMMENT 'demo',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='demo';
