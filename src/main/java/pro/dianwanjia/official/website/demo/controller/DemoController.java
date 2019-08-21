@@ -22,7 +22,6 @@ public class DemoController {
     @GetMapping("/index")
     @ApiOperation(value = "点万家")
     public String hello(){
-        System.out.println(1);
         return "hello 点万家";
     }
 
