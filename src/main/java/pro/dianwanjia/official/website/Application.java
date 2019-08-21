@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @author LX
  * @version V1.0.0
  * @date: 2019/8/20 12:03
- * @description:
+ * @description: 点万家官网
  */
 @Configuration
 @SpringBootApplication
