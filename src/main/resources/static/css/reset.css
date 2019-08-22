@@ -84,7 +84,7 @@ header{
 }
 .wmdcp{ background: url(../images/icon_05.png) left bottom no-repeat; }
 .zdsp{ background: url(../images/icon_09.png) left bottom no-repeat; }
-.xzsx{background: url(xz_16.png) left bottom no-repeat;}
+.xzsx{background: url(../images/xz_16.png) left bottom no-repeat;}
 
 /* 尾部 */
 footer{
@@ -104,7 +104,7 @@ footer{
   margin-top: 30px;
   padding-left: 130px;
   font-size: 16px;
-  background: url(ewm.jpg) left center no-repeat;
+  background: url(../images/ewm.jpg) left center no-repeat;
   background-size: 123px 123px;
 }
 .footer_p{

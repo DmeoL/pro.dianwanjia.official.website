@@ -1,6 +1,7 @@
 <!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <body>
+
 <!-- 引用公共资源 -->
 <div th:fragment="common_resource">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -36,5 +37,11 @@
         <a href="javascript:;" class="jump_url">联系我们</a>
     </div>
 </header>
+
+
+<!--尾部 e 版权-->
+<div th:fragment="common_copyright">
+    <p class="footer_p">Copyright © 2018All Rights Reserved. 粤ICP备18060237号-2 深圳前海水象科贸有限公司</p>
+</div>
 </body>
 </html>

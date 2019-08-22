@@ -1,40 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>水象优品_品质消费，轻松购物！</title>
-    <meta name="keywords" content="网上购物,网上商城,手机,笔记本,电脑,相机,数码,配件,手表,存储卡,水象优品,水象优品。">
-    <meta name="description" content="水象优品_专业的综合网上购物商城，销售3C数码、家居、美妆等数万个品牌优质商品，旨在为用户提供快捷、安全的信用消费服务，为您打造愉悦的网上购物体验!">
-
-    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
-    <!--<meta name="renderer" content="webkit">-->
-    <!-- No Baidu Siteapp-->
-    <!--<meta http-equiv="Cache-Control" content="no-siteapp">-->
-    <!--<meta http-equiv="Cache-Control" content="no-transform">-->
-
-    <!--<meta name="format-detection" content="telephone = no">-->
-    <!--<meta name="apple-mobile-web-app-capable" content="yes">-->
-    <!--<meta name="apple-mobile-web-app-capable" content="yes">-->
-    <!--<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
-    <!-- 指定标题 -->
-    <!--<meta name="apple-mobile-web-app-title" content="水象优品">-->
-    <!--<meta name="mobile-web-app-capable" content="yes">-->
-    <!--<meta name="msapplication-TileColor" content="#ff9230">-->
-    <link rel="stylesheet" th:href="@{/css/reset.css}">
-    <link rel="stylesheet" th:href="@{/css/index.css}">
+    <div th:replace="common/common_resource :: common_resource"></div>
 </head>
 <body>
 <!-- 头部 s -->
-<header>
-    <div class="header_box">
-        <a href="javascript:;" class="jump_url activi_a">首页</a>
-        <!--<a href="http://www.51sxyp.com/about.html" class="jump_url">关于我们</a>-->
-        <!--<a href="http://www.51sxyp.com/contact.html" class="jump_url">联系我们</a>-->
-    </div>
-</header>
+<header th:replace="/common/common_resource :: common_header"></header>
 <!-- 头部 e -->
 <div class="banner_box">
-    <img th:src="@{/images/banner_02.jpg}">
+    <img th:src="@{/images/404.png}">
 </div>
 </body>
 </html>
