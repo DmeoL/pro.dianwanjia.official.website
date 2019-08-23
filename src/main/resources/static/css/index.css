@@ -3,14 +3,24 @@
     height: 442px;
     background: #ffffff;
 }
+.our_product_wrap_one{
+    width:100%;
+    height: 200px;
+    background: #ffffff;
+}
+.our_product_box_one{
+    width: 990px;
+    margin: 0 auto;
+    white-space: nowrap;
+}
 .our_product_box{
     width: 990px;
     margin: 0 auto;
 }
 .our_product_img{
     display: block;
-    width: 100%;
-    margin-top: 66px;
+    width: 80%;
+    margin-top: 30px;
 }
 .main_product_wrap{
     width:100%;
