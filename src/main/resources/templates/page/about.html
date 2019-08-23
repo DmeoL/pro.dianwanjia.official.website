@@ -17,7 +17,7 @@
 <div class="about_wrap">
     <div class="left_box">
         <!-- <p class="left_p active"><span class="left_p_00">水象优品是什么</span></p> -->
-        <p class="left_p"><span class="left_p_01">水象优品能做什么</span></p>
+        <p class="left_p"><span class="left_p_01">点万家能做什么</span></p>
         <!-- <p class="left_p"><span class="left_p_02">水象理念</span></p> -->
     </div>
     <div class="panes right_box">
@@ -32,9 +32,9 @@
             </div>
         </div> -->
         <div class="pane">
-            <p class="right_txt_title">水象优品能做什么</p>
+            <p class="right_txt_title">点万家能做什么</p>
             <div class="conment_txt_box">
-                <p class="conment_txt">水象优品是一个主要为提供生鲜食品、生活用品以及3C等商品的科技赋能商城。除了包邮、正品保证等基本服务以外，给用户提供更友好的多元消费模式。</p>
+                <p class="conment_txt">点万家服务号，为你提供身边的吃喝玩乐优惠活动信息，互联网+O2O生活服务，打造线下到店消费一站式消费场景,创建无界连锁经营的新模式，线下消费不仅自省，分享还能赚钱！</p>
             </div>
         </div>
         <div class="pane" style="display: none">
@@ -59,12 +59,13 @@
     linkClick(3);
 </script>
 
-<!--<script th:src="@{js/jquery-1.10.1.min.js}">-->
-    <!--$('.left_box p').click(function(){-->
-        <!--var index = $(this).index();-->
-        <!--$(this).addClass('active').siblings().removeClass('active');-->
-        <!--$('.panes>div:eq('+$(this).index()+')').show().siblings().hide();-->
-    <!--})-->
-<!--</script>-->
+<script th:src="@{js/jquery-1.10.1.min.js}"></script>
+<script>
+    $('.left_box p').click(function(){
+        var index = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.panes>div:eq('+$(this).index()+')').show().siblings().hide();
+    })
+</script>
 </body>
 </html>

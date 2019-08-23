@@ -21,20 +21,21 @@
     height: 639px;
     padding-top: 3px;
     margin: 0 auto;
-    padding-left: 435px;
+    padding-left: 500px;
     background: url(../images/icon_12.png) left bottom no-repeat;
+    background-size: 600px 600px;
 }
 .main_dt{
     margin-bottom: 44px;
-    padding-left: 72px;
+    padding-left: 150px;
 }
 .c3sm{
-    margin-top: 37px;
-    background: url(../images/icon_03.png) left center no-repeat;
+    margin-top: 50px;
+    background: url(../images/icon1.png) 90px center no-repeat;
 }
-.aml{background: url(../images/icon_06.png) left center no-repeat;}
-.xjd{background: url(../images/icon_08.png) left center no-repeat;}
-.wesh{background: url(../images/icon_10.png) left center no-repeat;}
+.aml{background: url(../images/icon2.png) 90px center no-repeat;}
+.xjd{background: url(../images/icon3.png) 90px center no-repeat;}
+/*.wesh{background: url(../images/icon3.png) 90px center no-repeat;}*/
 .main_dt p{ line-height: 1.5;}
 .main_dt_title{
     margin-bottom: 12px;

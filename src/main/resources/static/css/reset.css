@@ -83,7 +83,10 @@ header{
   font-size: 24px;
 }
 .wmdcp{ background: url(../images/icon_05.png) left bottom no-repeat; }
-.zdsp{ background: url(../images/icon_09.png) left bottom no-repeat; }
+.zdsp{
+    background: url(../images/icon_09.png) 90px bottom no-repeat;
+    padding-left: 90px;
+}
 .xzsx{background: url(../images/xz_16.png) left bottom no-repeat;}
 
 /* 尾部 */
