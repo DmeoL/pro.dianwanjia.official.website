@@ -3,39 +3,808 @@
 <head>
     <div th:replace="common/common_resource :: common_resource"></div>
     <link rel="stylesheet" th:href="@{/css/index.css}">
+    <link rel="stylesheet" th:href="@{/css/join.css}">
+    <link rel="stylesheet" th:href="@{/css/page.css}">
+    <script type="text/javascript" th:src="@{/js/jquery-1.10.1.min.js}"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".list-unstyled").click(function(){
+                $(this).addClass("opened");
+            });
+        });
+    </script>
+
 </head>
 <body>
 <!-- 头部 s -->
 <header th:replace="common/common_resource :: common_header"></header>
 <!-- 头部 e -->
 <div class="banner_box">
-    <img th:src="@{/images/banner_02.jpg}">
+    <img th:src="@{/images/join_banner.jpg}">
 </div>
-<div class="our_product_wrap">
-    <div class="our_product_box">
-        <p class="our_title wmdcp">我们的产品</p>
-        <img th:src="@{/images/sp_08.png}" class="our_product_img">
-    </div>
-</div>
-<div class="main_product_wrap">
-    <div class="main_product_box">
-        <p class="our_title zdsp">主打商品</p>
-        <div class="main_dt c3sm">
-            <p class="main_dt_title">3C数码</p>
-            <p class="main_dt_conment">我们为您精挑细选的优质数码，让您放心购买放心购买</p>
+
+
+<div class="wrap">
+    <div class="container mt20">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="big-intro">
+                    <p style="font-size:16px;">
+                        SegmentFault 正在迅猛发展，我们希望你的加入能让 SegmentFault 有更大的改观和发展。
+                        <br>
+                        如果你和我们有一样的梦想、有激情，别犹豫，加入我们，一起为中文开发者打造最好的技术交流社区。
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6" id="jobLeft">
+
+                <ul class="list-unstyled box-item hire-box">
+                    <li>
+                        <a href="mailto:jobs@segmentfault.com?subject=%E5%BA%94%E8%81%98%20UI%E8%AE%BE%E8%AE%A1%E5%B8%88%20-%20[%E5%A7%93%E5%90%8D]"
+                           class="btn btn-primary pull-right btn-apply">投递简历</a>
+
+                        <h3 class="h4 title">UI设计师（杭州）</h3></li>
+
+                    <li><strong>岗位职责：</strong></li>
+
+                    <ol>
+
+                        <li> 为网站、APP 进行视觉推导并完成设计方案</li>
+
+                        <li> 为新产品与新功能提供创意策划及用户界面的设计方案</li>
+
+                        <li> 为日常的运营活动及功能维护提供设计支持</li>
+
+                        <li> 参与前瞻性产品的创意设计和 DEMO 的实现</li>
+
+                    </ol>
+
+
+                    <li><strong>岗位要求：</strong></li>
+
+                    <ol>
+
+                        <li> 2 年及以上相关行业经验</li>
+
+                        <li> 热爱设计，有宽广的行业视野与时尚的审美标准</li>
+
+                        <li> 熟练使用常用设计工具，拥有扎实的设计理论与技巧</li>
+
+                        <li> 强大的执行力，开放的心态，对品质有坚持，不盲目，不固执</li>
+
+                        <li> 富有激情、有创造力、积极主动、关注细节、学习能力强</li>
+
+                        <li> 良好的逻辑能力，条理清晰，对用户行为敏感</li>
+
+                    </ol>
+
+
+                    <li><strong>加分项：</strong></li>
+
+                    <ol>
+
+                        <li> 有编码经验（HTML/CSS/JS）</li>
+
+                        <li> 有 Behance/Dribbble 账号并上传作品</li>
+
+                    </ol>
+
+
+                    <li><strong>薪水待遇：</strong></li>
+
+                    <ol>
+
+                        <li> 月薪 10-18K</li>
+
+                        <li> 有机会获得融资前的全员期权</li>
+
+                        <li> 项目奖金</li>
+
+                    </ol>
+
+
+                    <p>注：简历请附带作品！</p>
+
+
+                </ul>
+
+
+                <ul class="list-unstyled box-item hire-box">
+                    <li>
+                        <a href="mailto:jobs@segmentfault.com?subject=%E5%BA%94%E8%81%98%20%E8%A7%86%E8%A7%89/%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E5%B8%88%20-%20[%E5%A7%93%E5%90%8D]"
+                           class="btn btn-primary pull-right btn-apply">投递简历</a>
+
+                        <h3 class="h4 title">视觉/品牌设计师（杭州）</h3></li>
+
+                    <li><strong>岗位职责：</strong></li>
+
+                    <ol>
+
+                        <li> 负责公司和项目设计宣传形象、宣传物料（如漫画、宣传册、易拉宝玩偶、手办、T恤等）</li>
+
+                        <li> 负责平台运营设计需求（广告及活动）</li>
+
+                        <li> 对公司官网进行设计维护及其他推广类美术工作</li>
+
+                    </ol>
+
+
+                    <li><strong>岗位要求：</strong></li>
+
+                    <ol>
+
+                        <li> 2年以上互联网公司品牌视觉设计和产品UI设计工作经验</li>
+
+                        <li> 正规院校视觉传达、艺术设计相关专业毕业，有扎实的美术功底</li>
+
+                        <li> 精通PS、AI、CD等设计软件工具，学习能力强</li>
+
+                        <li> 关注互联网产品，熟悉企业品牌设计和VI系统</li>
+
+                    </ol>
+
+
+                    <li><strong>加分项：</strong></li>
+
+                    <ol>
+
+                        <li> 有手绘基础者优先</li>
+
+                        <li> 有互联网从业经验者更佳！</li>
+
+                    </ol>
+
+
+                    <li><strong>薪水待遇：</strong></li>
+
+                    <ol>
+
+                        <li> 月薪 10-18K</li>
+
+                        <li> 有机会获得融资前的全员期权</li>
+
+                        <li> 项目奖金</li>
+
+                    </ol>
+
+
+                </ul>
+
+
+                <ul class="list-unstyled box-item hire-box">
+                    <li>
+                        <a href="mailto:jobs@segmentfault.com?subject=%E5%BA%94%E8%81%98%20PHP%E4%B8%AD%E9%AB%98%E7%BA%A7%E5%B7%A5%E7%A8%8B%E5%B8%88%20-%20[%E5%A7%93%E5%90%8D]"
+                           class="btn btn-primary pull-right btn-apply">投递简历</a>
+
+                        <h3 class="h4 title">PHP中高级工程师（杭州）</h3></li>
+
+                    <li><strong>岗位职责：</strong></li>
+
+                    <ol>
+
+                        <li> 负责日常业务项目开发</li>
+
+                        <li> 负责框架的开发及维护</li>
+
+                        <li> 负责一部分运维工作</li>
+
+                        <li> 参与社区运营的讨论与执行</li>
+
+                    </ol>
+
+
+                    <li><strong>岗位要求：</strong></li>
+
+                    <ol>
+
+                        <li> 2 年及以上开发经验</li>
+
+                        <li> 熟悉各种 PHP 框架并且在项目中使用过</li>
+
+                        <li> 熟悉 Redis</li>
+
+                        <li> 至少另外会 Java、Python、Ruby、Scala 中的一种</li>
+
+                        <li> 掌握基本的前端知识，知道以及会使用 HTML5 标准</li>
+
+                    </ol>
+
+
+                    <li><strong>特殊要求项（至少满足其中之一）：</strong></li>
+
+                    <ol>
+
+                        <li> 有开源项目以及 GitHub 地址</li>
+
+                        <li> 有 SegmentFault 账号并有得分</li>
+
+                        <li> 有个人博客</li>
+
+                    </ol>
+
+
+                    <li><strong>薪水待遇：</strong></li>
+
+                    <ol>
+
+                        <li> 月薪 10-25K</li>
+
+                        <li> 有机会获得融资前的全员期权</li>
+
+                        <li> 项目奖金</li>
+
+                    </ol>
+
+
+                </ul>
+
+
+                <ul class="list-unstyled box-item hire-box">
+                    <li>
+                        <a href="mailto:jobs@segmentfault.com?subject=%E5%BA%94%E8%81%98%20%E4%B8%AD%E9%AB%98%E7%BA%A7iOS%E5%B7%A5%E7%A8%8B%E5%B8%88%20-%20[%E5%A7%93%E5%90%8D]"
+                           class="btn btn-primary pull-right btn-apply">投递简历</a>
+
+                        <h3 class="h4 title">中高级iOS工程师（杭州）</h3></li>
+
+                    <li><strong>岗位职责：</strong></li>
+
+                    <ol>
+
+                        <li> 负责公司手机客户端的开发与维护</li>
+
+                        <li> 负责其它手机产品的研发</li>
+
+                        <li> 负责一部分运维工作</li>
+
+                        <li> 参与社区运营的讨论与执行</li>
+
+                    </ol>
+
+
+                    <li><strong>岗位要求：</strong></li>
+
+                    <ol>
+
+                        <li> 2年及以上经验</li>
+
+                        <li> 至少会 iOS 和 Android 一种，两种均掌握者优先</li>
+
+                        <li> 能够独立完成移动端程序设计</li>
+
+                        <li> 熟悉基于 RESTful API 的开发模式</li>
+
+                        <li> 良好的团队协作能力，并有 持续的推动力</li>
+
+                    </ol>
+
+
+                    <li><strong>特殊要求项（至少满足其中之一）：</strong></li>
+
+                    <ol>
+
+                        <li> 开发过上榜热门应用</li>
+
+                        <li> 有 SegmentFault，GitHub 账号，及个人博客</li>
+
+                        <li> 有开源项目及地址</li>
+
+                    </ol>
+
+
+                    <li><strong>薪水待遇：</strong></li>
+
+                    <ol>
+
+                        <li> 月薪 10-25K</li>
+
+                        <li> 有机会获得融资前的全员期权</li>
+
+                        <li> 项目奖金</li>
+
+                    </ol>
+
+
+                </ul>
+
+
+                <ul class="list-unstyled box-item hire-box">
+                    <li>
+                        <a href="mailto:jobs@segmentfault.com?subject=%E5%BA%94%E8%81%98%20%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%20-%20[%E5%A7%93%E5%90%8D]"
+                           class="btn btn-primary pull-right btn-apply">投递简历</a>
+
+                        <h3 class="h4 title">前端开发工程师（杭州）</h3></li>
+
+                    <li><strong>岗位职责：</strong></li>
+
+                    <ol>
+
+                        <li> SegmentFault 主站和其他产品的研发维护</li>
+
+                    </ol>
+
+
+                    <li><strong>岗位要求：</strong></li>
+
+                    <ol>
+
+                        <li> 2 年及以上开发经验</li>
+
+                        <li> 手快</li>
+
+                        <li> 偏重 JavaScript 方向</li>
+
+                        <li> 熟悉 jQuery、Bootstrap，独自开发过 jQuery 插件为佳</li>
+
+                        <li> 熟练掌握 HTML5 及 CSS3 标准</li>
+
+                        <li> 知道并会使用 AngularJS</li>
+
+                        <li> 知道 XSS 原理及防范</li>
+
+                    </ol>
+
+
+                    <li><strong>加分项：</strong></li>
+
+                    <ol>
+
+                        <li> 有开源项目以及 GitHub 地址</li>
+
+                        <li> 有 SegmentFault 账号并有得分</li>
+
+                        <li> 有个人博客</li>
+
+                        <li> 是妹子</li>
+
+                    </ol>
+
+
+                    <li><strong>薪水待遇：</strong></li>
+
+                    <ol>
+
+                        <li> 月薪 15-25K</li>
+
+                        <li> 有机会获得融资前的全员期权</li>
+
+                        <li> 项目奖金</li>
+
+                    </ol>
+
+
+                </ul>
+
+
+                <ul class="list-unstyled box-item hire-box">
+                    <li>
+                        <a href="mailto:jobs@segmentfault.com?subject=%E5%BA%94%E8%81%98%20%E6%8A%80%E6%9C%AF%E7%BC%96%E8%BE%91/%E8%BF%90%E8%90%A5%20-%20[%E5%A7%93%E5%90%8D]"
+                           class="btn btn-primary pull-right btn-apply">投递简历</a>
+
+                        <h3 class="h4 title">技术编辑/运营（杭州）</h3></li>
+
+                    <li><strong>岗位职责：</strong></li>
+
+                    <ol>
+
+                        <li> 负责日常技术内容的编撰，包括独立撰写和翻译</li>
+
+                        <li> 负责社区技术内容的日常运营工作</li>
+
+                        <li> 关注技术领域新鲜事物并报道</li>
+
+                        <li> 技术运营相关的内容和事件策划</li>
+
+                    </ol>
+
+
+                    <li><strong>岗位要求：</strong></li>
+
+                    <ol>
+
+                        <li> 计算机及相关专业者，英语和文笔兼优</li>
+
+                        <li> 对社区有热情，容易接受新事物</li>
+
+                        <li> 会翻墙，有网站编辑经验，有一年以上的 IT 技术相关工作经验，软件开发者优先</li>
+
+                        <li> 强大的执行力，良好的逻辑能力，对用户行为敏感</li>
+
+                    </ol>
+
+
+                    <li><strong>加分项：</strong></li>
+
+                    <ol>
+
+                        <li> 有内容、事件策划能力</li>
+
+                        <li> 有 GitHub 地址和 SegmentFault 帐号，或者个人博客</li>
+
+                        <li> 该职位提供实习，实习期至少三个月。</li>
+
+                    </ol>
+
+
+                    <li><strong>薪水待遇：</strong></li>
+
+                    <ol>
+
+                        <li> 月薪 6-12K</li>
+
+                        <li> 有机会获得融资前的全员期权</li>
+
+                        <li> 项目奖金</li>
+
+                    </ol>
+
+
+                </ul>
+
+            </div>
+            <div class="col-md-6" id="jobRight">
+
+                <ul class="list-unstyled box-item hire-box">
+                    <li>
+                        <a href="mailto:jobs@segmentfault.com?subject=%E5%BA%94%E8%81%98%20%E7%A4%BE%E5%8C%BA%E8%BF%90%E8%90%A5/%E7%AD%96%E5%88%92%20-%20[%E5%A7%93%E5%90%8D]"
+                           class="btn btn-primary pull-right btn-apply">投递简历</a>
+
+                        <h3 class="h4 title">社区运营/策划（杭州）</h3></li>
+
+                    <li><strong>岗位职责：</strong></li>
+
+                    <ol>
+
+                        <li> 社区用户运营相关工作</li>
+
+                        <li> 社区内容运营和策划相关工作</li>
+
+                        <li> 运营相关的线上线下活动策划，以及部分市场策划</li>
+
+                        <li> 运营部相关工作的协助完成</li>
+
+                    </ol>
+
+
+                    <li><strong>岗位要求：</strong></li>
+
+                    <ol>
+
+                        <li> 优秀的策划能力，能够制造话题和社区热点，引导用户</li>
+
+                        <li> 良好的沟通能力和执行能力，且能够独立完成任务</li>
+
+                        <li> 有新奇酷的想法，不拘泥于常规，善于在传统中加入新鲜元素</li>
+
+                    </ol>
+
+
+                    <li><strong>加分项：</strong></li>
+
+                    <ol>
+
+                        <li> 有一定的技术相关知识</li>
+
+                        <li> 有一定的用户运营相关经验</li>
+
+                    </ol>
+
+
+                    <li><strong>薪水待遇：</strong></li>
+
+                    <ol>
+
+                        <li> 月薪 6-12K</li>
+
+                        <li> 有机会获得融资前的全员期权</li>
+
+                        <li> 项目奖金</li>
+
+                    </ol>
+
+
+                    <p>注：该职位提供实习，实习期至少三个月。</p>
+
+
+                </ul>
+
+
+                <ul class="list-unstyled box-item hire-box">
+                    <li>
+                        <a href="mailto:jobs@segmentfault.com?subject=%E5%BA%94%E8%81%98%20%E7%A4%BE%E5%8C%BA%E4%B8%BB%E7%BC%96%20-%20[%E5%A7%93%E5%90%8D]"
+                           class="btn btn-primary pull-right btn-apply">投递简历</a>
+
+                        <h3 class="h4 title">社区主编（杭州）</h3></li>
+
+                    <li><strong>岗位职责：</strong></li>
+
+                    <ol>
+
+                        <li> 根据公司运营理念，负责内容建设的整体规划，提高网站的流量和影响力</li>
+
+                        <li> 负责网站内容质量的控制与评估，持续优化栏目内容</li>
+
+                        <li> 独立完成网站和栏目内容架构、频道栏目策划、网站专题活动策划</li>
+
+                        <li> 组织策划实施内容更新和对关键内容进行审核，确定优秀资源，保证内容安全</li>
+
+                        <li> 负责制定内容制作标准和规范，组织内容团队进行高质量的素材采集和策划等工作</li>
+
+                    </ol>
+
+
+                    <li><strong>岗位要求：</strong></li>
+
+                    <ol>
+
+                        <li> 5年以上相关工作经验，有事件、内容、专题、活动等经验</li>
+
+                        <li> 具有良好的IT技术背景，熟悉IT技术的发展趋势和动态，具有出色的热点把握能力和新闻敏感性</li>
+
+                        <li> 工作细致耐心，责任心强，具有良好的团队合作精神和优秀的沟通、调动资源的能力</li>
+
+                        <li> 具备一定的创意能力，同时善于激发他人的创意想法</li>
+
+                    </ol>
+
+
+                    <li><strong>薪水待遇：</strong></li>
+
+                    <ol>
+
+                        <li> 月薪 8-15k</li>
+
+                        <li> 有机会获得融资前的全员期权</li>
+
+                    </ol>
+
+
+                </ul>
+
+
+                <ul class="list-unstyled box-item hire-box">
+                    <li>
+                        <a href="mailto:jobs@segmentfault.com?subject=%E5%BA%94%E8%81%98%20%E5%93%81%E7%89%8C%E6%96%87%E6%A1%88%E7%AD%96%E5%88%92%20-%20[%E5%A7%93%E5%90%8D]"
+                           class="btn btn-primary pull-right btn-apply">投递简历</a>
+
+                        <h3 class="h4 title">品牌文案策划（杭州）</h3></li>
+
+                    <li><strong>岗位职责：</strong></li>
+
+                    <ol>
+
+                        <li> 负责公司公关稿、发言稿等外宣材料的提纲撰写及采访跟进，并进行后续媒体跟踪、材料整理等</li>
+
+                        <li> 负责配合品牌活动进行方案的制定，策划适合于互联网传播的文案</li>
+
+                        <li> 负责协助品牌经理完成公司品牌宣传工作，包括合作方跟进、活动执行配合等</li>
+
+                    </ol>
+
+
+                    <li><strong>岗位要求：</strong></li>
+
+                    <ol>
+
+                        <li> 2年以上工作经验，有品牌策划文案工作经验优先，新闻、中文系毕业优先考虑</li>
+
+                        <li> 有良好的文案写作能力及文字组织能力，具备良好品牌策划及事件策划能力</li>
+
+                        <li> 热爱新媒体，有创新精神</li>
+
+                        <li> 熟知互联网传播规律，有相关策划经验</li>
+
+                        <li> 有较强的沟通能力，能吃苦耐劳，具备良好的团队合作精神</li>
+
+                    </ol>
+
+
+                    <li><strong>薪水待遇：</strong></li>
+
+                    <ol>
+
+                        <li> 月薪 5-10k</li>
+
+                        <li> 有机会获得融资前的全员期权</li>
+
+                    </ol>
+
+
+                </ul>
+
+
+                <ul class="list-unstyled box-item hire-box">
+                    <li>
+                        <a href="mailto:jobs@segmentfault.com?subject=%E5%BA%94%E8%81%98%20%E5%B8%82%E5%9C%BA%E8%BF%90%E8%90%A5%E7%BB%8F%E7%90%86%20-%20[%E5%A7%93%E5%90%8D]"
+                           class="btn btn-primary pull-right btn-apply">投递简历</a>
+
+                        <h3 class="h4 title">市场运营经理（杭州,北京）</h3></li>
+
+                    <li><strong>岗位职责：</strong></li>
+
+                    <ol>
+
+                        <li> 独立完成产品市场推广方案策划、对外合作方案并组织实现</li>
+
+                        <li> 不断制造热点和创新营销推广方式，并组织资源形成独特有效的推广传播，实现品牌推广以及市场宣传，扩大产品在程序员群体中的知名度和影响力</li>
+
+                        <li> 维护已有合作伙伴日常合作关系，并积极拓展新的合作伙伴</li>
+
+                        <li> 收集并反馈用户对产品的建议，推动产品的持续改进</li>
+
+                    </ol>
+
+
+                    <li><strong>岗位要求：</strong></li>
+
+                    <ol>
+
+                        <li> 2年及以上相关行业经验，有一定活动策划与执行的实际操作经验</li>
+
+                        <li> 对市场信息敏感，熟悉互联网推广模式</li>
+
+                        <li> 良好的沟通能力和执行能力，心理素质佳</li>
+
+                        <li> 思维敏捷，善于学习，团队合作和抗压能力强</li>
+
+                    </ol>
+
+
+                    <li><strong>薪水待遇：</strong></li>
+
+                    <ol>
+
+                        <li> 月薪 10-15K</li>
+
+                        <li> 有机会获得融资前的全员期权</li>
+
+                        <li> 项目奖金</li>
+
+                    </ol>
+
+
+                </ul>
+
+
+                <ul class="list-unstyled box-item hire-box">
+                    <li>
+                        <a href="mailto:jobs@segmentfault.com?subject=%E5%BA%94%E8%81%98%20%E5%B8%82%E5%9C%BA%E4%B8%93%E5%91%98%20-%20[%E5%A7%93%E5%90%8D]"
+                           class="btn btn-primary pull-right btn-apply">投递简历</a>
+
+                        <h3 class="h4 title">市场专员（杭州）</h3></li>
+
+                    <li><strong>岗位职责：</strong></li>
+
+                    <ol>
+
+                        <li> 协助市场部同事线下活动前期准备工作：主要为前期物料的购买、嘉宾确认邮件以及相关合作伙伴有关已经确认的合作方式跟进</li>
+
+                        <li> 活动期间协助现场签到，引领，秩序维护，现场拍照，管理志愿者等</li>
+
+                        <li> 活动结束后，整理现场，协助报道。除了活动外，还会负责一些市场合作的简单处理，如交换友情链接等</li>
+
+                    </ol>
+
+
+                    <li><strong>岗位要求：</strong></li>
+
+                    <ol>
+
+                        <li> 你是一个好玩的人</li>
+
+                        <li> 有技术背景，不一定是计算机专业，但是必须有开发相关的知识</li>
+
+                        <li> 很强的执行力，积极的心态，不抱怨的态度</li>
+
+                        <li> 有新奇酷的想法，不拘泥于常规，善于在传统中加入新鲜元素</li>
+
+                        <li> 独立能力很强，能够独立完成任务</li>
+
+                    </ol>
+
+
+                    <li><strong>加分项：</strong></li>
+
+                    <ol>
+
+                        <li> 有 SegmentFault，GitHub 账号，及个人博客</li>
+
+                        <li> 有市场经验相关者</li>
+
+                    </ol>
+
+
+                    <li><strong>薪水待遇：</strong></li>
+
+                    <ol>
+
+                        <li> 月薪 5-10K</li>
+
+                        <li> 有机会获得融资前的全员期权</li>
+
+                        <li> 项目奖金</li>
+
+                    </ol>
+
+
+                    <p>注：该职位提供实习，实习期至少三个月。</p>
+
+
+                </ul>
+
+
+                <ul class="list-unstyled box-item hire-box">
+                    <li>
+                        <a href="mailto:jobs@segmentfault.com?subject=%E5%BA%94%E8%81%98%20%E9%AB%98%E7%BA%A7%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%20-%20[%E5%A7%93%E5%90%8D]"
+                           class="btn btn-primary pull-right btn-apply">投递简历</a>
+
+                        <h3 class="h4 title">高级产品经理（杭州）</h3></li>
+
+                    <li><strong>岗位职责：</strong></li>
+
+                    <ol>
+
+                        <li> 根据公司战略，协助公司管理团队不断优化公司产品设计和研发流程</li>
+
+                        <li> 策划并执行用户调研，收集分析用户需求，持续优化改进产品用户体验</li>
+
+                        <li> 分析竞争对手的业务逻辑、市场动态、产品形态和竞争态势</li>
+
+                        <li> 与研发、设计、测试团队保持高效沟通，有效推动产品开发进度，确保产品按计划上线发布</li>
+
+                        <li> 负责产品生命周期管理，在产品不同发展阶段，适时进行产品改进和产品策略调整</li>
+
+                        <li> 基于公司核心战略，不断探索新的商业模式和产品形态，推动公司整体持续进步</li>
+
+                    </ol>
+
+
+                    <li><strong>岗位要求：</strong></li>
+
+                    <ol>
+
+                        <li> 5年以上互联网产品设计和管理工作经验，熟悉PC/iOS/Android/微信等各平台产品设计</li>
+
+                        <li> 至少具有2年以上独立主导互联网产品设计研发的工作经历，具有极强的沟通能力和项目管理能力</li>
+
+                        <li> 热爱互联网，熟悉互联网行业发展态势、产品形态和常见的商业模式</li>
+
+                        <li> 有良好的逻辑性和结构性思维、优秀的创新能力和业务规划能力</li>
+
+                    </ol>
+
+
+                    <li><strong>加分项：</strong></li>
+
+                    <ol>
+
+                        <li> 具有良好的研发技术背景优先</li>
+
+                        <li> 熟悉内容门户、社区网站产品者优先</li>
+
+                    </ol>
+
+
+                    <li><strong>薪水待遇：</strong></li>
+
+                    <ol>
+
+                        <li> 月薪 10-20k</li>
+
+                        <li> 有机会获得融资前的全员期权</li>
+
+                        <li> 项目奖金</li>
+
+                    </ol>
+
+
+                </ul>
+
+            </div>
         </div>
-        <div class="main_dt aml">
-            <p class="main_dt_title">爱美丽</p>
-            <p class="main_dt_conment">汇聚各大明星产品，为您的美丽保驾护航</p>
-        </div>
-        <div class="main_dt xjd">
-            <p class="main_dt_title">小家电</p>
-            <p class="main_dt_conment">关爱舒适，开启智能家居生活</p>
-        </div>
-        <div class="main_dt wesh">
-            <p class="main_dt_title">WE生活</p>
-            <p class="main_dt_conment">用我所能，营造惬意生活，阐述对生活de热爱</p>
-        </div>
+
+        <p>您可以将自己的简历发送至邮箱 <a
+                href="mailto:jobs@segmentfault.com?subject=%E5%BA%94%E8%81%98%20[%E8%81%8C%E4%BD%8D]%20-%20[%E5%A7%93%E5%90%8D]">jobs@segmentfault.com</a>，或者直接点击上方的投递按钮。
+        </p>
     </div>
 </div>
 
