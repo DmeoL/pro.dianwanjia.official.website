@@ -1,1 +1,34 @@
 ## 生产环境
+
+server:
+  port: 11000
+  servlet:
+    context-path: /dwj
+
+
+spring:
+  ## 静态资源路径
+  resources:
+    static-locations: classpath:/static/
+  thymeleaf:
+    ## 页面默认前缀目录
+    prefix: classpath:/templates/page/
+    ## 响应页面默认后缀
+    suffix: .html
+    encoding: UTF-8
+    ##设置为false，否则会有缓存，导致页面没法及时看到更新后的效果
+    cache: false
+
+# jdbc_config   datasource
+datasource:
+  db:
+    driver-class-name: com.mysql.jdbc.Driver
+    jdbc-url: jdbc:mysql://localhost:3306/dianwanjia_official_website?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: xykj./
+
+spring.application.name: pro.dianwanjia.official.website
+
+logging:
+    level:
+        pro.dianwanjia.official.website: DEBUG

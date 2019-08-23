@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <div th:replace="common/common_resource :: common_resource"></div>
+<head th:replace="common/common_resource :: common_resource">
+</head>
     <link rel="stylesheet" th:href="@{/css/about.css}">
     <style>
         .click_tit{ color:#5B88FC}
     </style>
-</head>
 <body>
 <!-- 头部 s -->
 <header th:replace="common/common_resource :: common_header"></header>

@@ -1,13 +1,10 @@
 <!DOCTYPE>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-<head>
-</head>
-<body>
 <!-- 引用公共资源 -->
-<div th:fragment="common_resource">
+<head th:fragment="common_resource">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>点万家</title>
-
+    <link  th:href="@{/images/favicon.ico}" rel="icon" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
     <!--No Baidu Siteapp-->
@@ -22,7 +19,9 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="msapplication-TileColor" content="#ff9230">
     <link rel="stylesheet" th:href="@{/css/reset.css}">
-</div>
+</head>
+<body>
+
 
 <!-- 引用公共头部s -->
 <header th:fragment="common_header">
