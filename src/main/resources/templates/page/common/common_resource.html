@@ -1,7 +1,8 @@
-<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<!DOCTYPE>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
 <body>
-
 <!-- 引用公共资源 -->
 <div th:fragment="common_resource">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -17,10 +18,9 @@
 
     <meta name="format-detection" content="telephone = no">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <!-- 指定标题 -->
-    <meta name="apple-mobile-web-app-title" content="水象优品">
+    <meta name="apple-mobile-web-app-title" content="点万家">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="msapplication-TileColor" content="#ff9230">
     <link rel="stylesheet" th:href="@{/css/reset.css}">
@@ -40,8 +40,6 @@
 <!-- 尾部 s -->
 <footer th:fragment="common_code">
     <div class="footer_box">
-        <p class="our_title xzsx">美好生活 一点万家</p>
-        <p class="QR_code">关注微信随时掌握万家优惠</p>
     </div>
 </footer>
 

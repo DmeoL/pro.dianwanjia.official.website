@@ -43,8 +43,8 @@ a:hover {
     content:""; 
     display:table; 
 } 
-.clearfix:after{clear:both;} 
-.clearfix{ 
+.clearfix:after{clear:both;}
+.clearfix{
     *zoom:1;/*IE/7/6*/
 }
 
@@ -59,6 +59,7 @@ header{
     margin: 0 auto;
     text-align: right;
     background: url(../images/logo.png) left center no-repeat;
+    background-size: 150px 50px;
 }
 .jump_url{
     display: inline-block;
@@ -69,8 +70,8 @@ header{
     text-align: center;
 }
 .activi_a{
-    color:  #5b88fc;
-    border-bottom: 2px solid #5b88fc;
+    color:  #ffc800;
+    border-bottom: 2px solid #ffc800;
 }
 /* banner */
 .banner_box{
@@ -82,34 +83,42 @@ header{
   line-height: 1.5;
   font-size: 24px;
 }
-.wmdcp{ background: url(../images/icon_05.png) left bottom no-repeat; }
+.wmdcp{
+    background: url(../images/icon_06.png) left bottom no-repeat;
+    margin-top: 50px;
+}
 .zdsp{
-    background: url(../images/icon_09.png) 90px bottom no-repeat;
+    background: url(../images/icon_07.png) 90px bottom no-repeat;
     padding-left: 90px;
+    /*margin-top: 30px;*/
+    background-size: 400px 75px;
 }
 .xzsx{background: url(../images/xz_16.png) left bottom no-repeat;}
 
 /* 尾部 */
 footer{
   clear: both;
+  margin-top: 150px;
+  margin-bottom: 50px;
   width: 100%;
-  height: 500px;
+  height: 600px;
   background: #f6f6f6 url(../images/footrt_12.png) right center no-repeat;
+  background-size: 100%;
 }
 .footer_box{
   width: 990px;
   height: 500px;
   margin: 0 auto;
 }
-.QR_code{
-  height: 123px;
-  line-height: 123px;
-  margin-top: 30px;
-  padding-left: 130px;
-  font-size: 16px;
-  background: url(../images/ewm.jpg) left center no-repeat;
-  background-size: 123px 123px;
-}
+/*.QR_code{*/
+  /*height: 123px;*/
+  /*line-height: 123px;*/
+  /*margin-top: 30px;*/
+  /*padding-left: 130px;*/
+  /*font-size: 16px;*/
+  /*background: url(../images/ewm.jpg) left center no-repeat;*/
+  /*background-size: 123px 123px;*/
+/*}*/
 .footer_p{
   height: 102px;
   line-height: 102px;
