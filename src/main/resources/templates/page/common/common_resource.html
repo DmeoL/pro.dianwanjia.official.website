@@ -1,15 +1,11 @@
 <!DOCTYPE>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-<head>
-</head>
-<body>
+
 <!-- 引用公共资源 -->
-<div th:fragment="common_resource">
+<head th:fragment="common_resource">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>点万家</title>
-    <meta name="keywords" content="网上购物,网上商城,手机,笔记本,电脑,相机,数码,配件,手表,存储卡,水象优品,水象优品。">
-    <meta name="description" content="水象优品_专业的综合网上购物商城，销售3C数码、家居、美妆等数万个品牌优质商品，旨在为用户提供快捷、安全的信用消费服务，为您打造愉悦的网上购物体验!">
-
+    <link  th:href="@{/favicon.ico}" rel="icon" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
     <!--No Baidu Siteapp-->
@@ -24,7 +20,9 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="msapplication-TileColor" content="#ff9230">
     <link rel="stylesheet" th:href="@{/css/reset.css}">
-</div>
+</head>
+<body>
+
 
 <!-- 引用公共头部s -->
 <header th:fragment="common_header">
