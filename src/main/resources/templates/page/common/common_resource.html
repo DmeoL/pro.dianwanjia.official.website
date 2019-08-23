@@ -24,24 +24,38 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="msapplication-TileColor" content="#ff9230">
     <link rel="stylesheet" th:href="@{/css/reset.css}">
-    <link rel="stylesheet" th:href="@{/css/index.css}">
 </div>
 
 <!-- 引用公共头部s -->
 <header th:fragment="common_header">
-    <div class="header_box">
-        <a href="javascript:;" class="jump_url activi_a">首页</a>
-        <a href="javascript:;" class="jump_url">关于我们</a>
-        <a href="javascript:;" class="jump_url">产品简介</a>
-        <a href="javascript:;" class="jump_url">加入我们</a>
-        <a href="javascript:;" class="jump_url">联系我们</a>
+    <div id="common_header" class="header_box">
+        <a th:href="@{/}" class="jump_url">首页</a>
+        <a th:href="@{product}" class="jump_url">产品简介</a>
+        <a th:href="@{join}" class="jump_url">加入我们</a>
+        <a th:href="@{about}" class="jump_url">关于我们</a>
+        <a th:href="@{contact}" class="jump_url">联系我们</a>
     </div>
 </header>
+
+<!-- 尾部 s -->
+<footer th:fragment="common_code">
+    <div class="footer_box">
+        <p class="our_title xzsx">美好生活 一点万家</p>
+        <p class="QR_code">关注微信随时掌握万家优惠</p>
+    </div>
+</footer>
 
 
 <!--尾部 e 版权-->
 <div th:fragment="common_copyright">
     <p class="footer_p">Copyright © 2018All Rights Reserved. 粤ICP备18060237号-2 深圳前海水象科贸有限公司</p>
 </div>
+
+<script th:fragment="common_script" type="application/javascript">
+    function linkClick(number) {
+        var links =document.getElementById("common_header").getElementsByTagName("a");
+        links[number].className="jump_url activi_a";
+    }
+</script>
 </body>
 </html>

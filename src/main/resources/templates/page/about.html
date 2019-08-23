@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:replace="common/common_resource :: common_resource"></div>
+    <link rel="stylesheet" th:href="@{/css/about.css}">
+    <style>
+        .click_tit{ color:#5B88FC}
+    </style>
+</head>
+<body>
+<!-- 头部 s -->
+<header th:replace="common/common_resource :: common_header"></header>
+<!-- 头部 e -->
+<div class="banner_box">
+    <img th:src="@{/images/about_banner.png}">
+</div>
+<div class="about_wrap">
+    <div class="left_box">
+        <!-- <p class="left_p active"><span class="left_p_00">水象优品是什么</span></p> -->
+        <p class="left_p"><span class="left_p_01">水象优品能做什么</span></p>
+        <!-- <p class="left_p"><span class="left_p_02">水象理念</span></p> -->
+    </div>
+    <div class="panes right_box">
+        <!-- <div class="pane">
+            <p class="right_txt_title">水象优品是什么</p>
+            <div class="conment_txt_box">
+                <p class="conment_txt">
+                    水象优品属于深圳前海水象科贸有限公司的一项重要业务。
+                    以客户至上为核心理念，我们致力于以成熟科技技术为客户更有效地提供商品及服务。
+                </p>
+                <img src="./public/images/footrt_12.png" class="conment_img">
+            </div>
+        </div> -->
+        <div class="pane">
+            <p class="right_txt_title">水象优品能做什么</p>
+            <div class="conment_txt_box">
+                <p class="conment_txt">水象优品是一个主要为提供生鲜食品、生活用品以及3C等商品的科技赋能商城。除了包邮、正品保证等基本服务以外，给用户提供更友好的多元消费模式。</p>
+            </div>
+        </div>
+        <div class="pane" style="display: none">
+            <p class="right_txt_title">水象理念</p>
+            <div class="conment_txt_box">
+                <p class="conment_txt">3</p>
+            </div>
+        </div>
+    </div>
+    <div class="right_box">
+
+    </div>
+</div>
+<!-- 尾部 s -->
+<footer th:replace="common/common_resource :: common_code"></footer>
+
+<!--尾部 e-->
+<div th:replace="common/common_resource :: common_copyright"></div>
+
+<script th:replace="common/common_resource :: common_script"></script>
+<script>
+    linkClick(3);
+</script>
+
+<!--<script th:src="@{js/jquery-1.10.1.min.js}">-->
+    <!--$('.left_box p').click(function(){-->
+        <!--var index = $(this).index();-->
+        <!--$(this).addClass('active').siblings().removeClass('active');-->
+        <!--$('.panes>div:eq('+$(this).index()+')').show().siblings().hide();-->
+    <!--})-->
+<!--</script>-->
+</body>
+</html>

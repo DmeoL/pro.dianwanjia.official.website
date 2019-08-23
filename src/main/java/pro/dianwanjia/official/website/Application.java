@@ -6,6 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * @author LX
@@ -15,10 +17,16 @@ import org.springframework.web.bind.annotation.GetMapping;
  */
 @Configuration
 @SpringBootApplication
+@Controller
 @MapperScan({"pro.dianwanjia.official.website.*.mapper"})
 public class Application {
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
+    }
+
+    @GetMapping("{page}")
+    public String page(@PathVariable("page") String page){
+        return page;
     }
 }

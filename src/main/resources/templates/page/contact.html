@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:replace="common/common_resource :: common_resource"></div>
+    <link rel="stylesheet" th:href="@{/css/contact.css}">
+</head>
+<body>
+<!-- 头部 s -->
+<header th:replace="common/common_resource :: common_header"></header>
+<!-- 头部 e -->
+<div class="contact_banner">
+    <img th:src="@{/images/conmact_03.png}">
+</div>
+<ul class="contact_uls">
+    <li class="contact_lis">
+        <p class="contact_txt_title">联系地址</p>
+        <p class="contact_conment">武汉市 洪山区<br>光谷金融港B区27栋</p>
+    </li>
+    <li class="contact_lis">
+        <p class="contact_txt_title">微信公众号</p>
+        <p class="contact_conment">关注 dianwanjia<br>点君为你推荐最新动态</p>
+    </li>
+    <li class="contact_lis">
+        <p class="contact_txt_title">联系方式</p>
+        <p class="contact_conment">邮箱联系：1224714537@qq.com<br>电话联系：189-7161-9254</p>
+    </li>
+</ul>
+<!-- 尾部 s -->
+<footer th:replace="common/common_resource :: common_code"></footer>
+
+<!--尾部 e-->
+<div th:replace="common/common_resource :: common_copyright"></div>
+
+<script th:replace="common/common_resource :: common_script"></script>
+<script>
+    linkClick(4);
+</script>
+</body>
+</html>
