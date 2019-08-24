@@ -3346,14 +3346,14 @@ textarea.input-lg, .form-horizontal .form-group-lg textarea.form-control, .input
 
 .btn-primary {
     color: #fff;
-    background-color: #009a61;
-    border-color: #008151
+    background-color: #ffbc23;
+    border-color: #ffbc23
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #006741;
-    border-color: #00432a
+    background-color: #ff9202;
+    border-color: #ff7109
 }
 
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
