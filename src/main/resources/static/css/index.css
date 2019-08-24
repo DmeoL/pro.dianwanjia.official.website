@@ -14,8 +14,7 @@
 }
 .our_product_box_one{
     width: 980px;
-    margin: 0 auto;
-    margin-top: 100px;
+    margin: 100px auto;
     white-space: nowrap;
 }
 .our_product_box{
@@ -51,8 +50,18 @@
     background: url(../images/icon_12.png) left bottom no-repeat;
     background-size: 600px 540px;
 }
+.main_product_box_two{
+    width: 400px;
+    height: 639px;
+    padding-top: 3px;
+    margin: 0 auto;
+    padding-left: 580px;
+    background: url(../images/icon_12.png) left bottom no-repeat;
+    background-size: 620px 550px;
+}
 .main_dt{
-    margin-bottom: 44px;
+    margin-bottom: 30px;
+    margin-left: -80px;
     padding-left: 150px;
 }
 .c3sm{
