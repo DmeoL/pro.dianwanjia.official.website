@@ -85,7 +85,8 @@ header{
 }
 .wmdcp{
     background: url(../images/icon_06.png) left bottom no-repeat;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-left:15px;
 }
 .zdsp{
     background: url(../images/icon_07.png) 90px bottom no-repeat;
