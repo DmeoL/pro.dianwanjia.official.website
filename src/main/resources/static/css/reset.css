@@ -20,6 +20,7 @@ body {
   font-family: "微软雅黑";
   line-height: 1;
   color: #222;
+  background-color: #ffffff;
 }
 ul,
 li {
@@ -98,11 +99,11 @@ header{
 /* 尾部 */
 footer{
   clear: both;
-  margin-top: 150px;
+  margin-top: 100px;
   margin-bottom: 50px;
   width: 100%;
   height: 600px;
-  background: #f6f6f6 url(../images/footrt_12.png) right center no-repeat;
+  background: #ffffff url(../images/footrt_12.png) right center no-repeat;
   background-size: 100%;
 }
 .footer_box{

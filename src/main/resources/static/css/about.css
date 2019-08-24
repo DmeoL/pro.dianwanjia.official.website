@@ -22,12 +22,6 @@
     padding-left: 58px;
     display: block;
 }
-.left_p_00{ background: url(../images/icon_001.png) 29px center no-repeat;}
-.left_p_01{ background: url(../images/icon_002.png) 29px center no-repeat;}
-.left_p_02{ background: url(../images/icon_003.png) 29px center no-repeat;}
-.active .left_p_00{ background: #eee url(../images/icon_active_001.png) 29px center no-repeat; color: #5B88FC;}
-.active .left_p_01{ background: #eee url(../images/icon_active_002.png) 29px center no-repeat; color: #5B88FC;}
-.active .left_p_02{ background: #eee url(../images/icon_active_003.png) 29px center no-repeat; color: #5B88FC;}
 .right_box{
     float: right;
     width: 727px;
