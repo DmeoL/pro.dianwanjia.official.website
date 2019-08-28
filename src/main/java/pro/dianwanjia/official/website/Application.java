@@ -3,6 +3,7 @@ package pro.dianwanjia.official.website;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Configuration
 @SpringBootApplication
 @Controller
+@ServletComponentScan
 @MapperScan({"pro.dianwanjia.official.website.*.mapper"})
 public class Application {
 
