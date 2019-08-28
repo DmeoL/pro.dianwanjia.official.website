@@ -22,7 +22,7 @@ import java.util.Set;
  * @date: 2019/8/27 15:11
  * @description: 请求过滤器
  */
-@WebFilter(urlPatterns = "/*",initParams = @WebInitParam(name = "excludedPaths",value = "/css/*,/js/*"))
+@WebFilter(urlPatterns = "/*",initParams = @WebInitParam(name = "excludedPaths",value = "/images/favicon.ico"))//过滤排除路径比如(value="/css/*,*.js,image/*")
 @ConfigurationProperties(prefix = "request")
 public class RequestFilter implements Filter {
     @ApiModelProperty(value = "限制访问时间")
@@ -55,6 +55,13 @@ public class RequestFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
+
+        // 过滤排除路径
+        if(isFilterExcludeRequest(request)){
+            filterChain.doFilter(servletRequest,servletResponse);
+            return;
+        }
+
         HttpServletResponse response = (HttpServletResponse) servletResponse;
         ServletContext context = request.getServletContext();
         // 过滤限制ip
