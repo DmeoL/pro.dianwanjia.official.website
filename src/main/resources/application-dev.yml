@@ -32,3 +32,13 @@ spring.application.name: pro.dianwanjia.official.website
 logging:
     level:
         pro.dianwanjia.official.website: DEBUG
+
+# 请求限制过滤器配置
+request:
+  ## 最小安全时间(毫秒)
+  min-safe-time-millis: 5000
+  ## 最大访问次数
+  maximum-visit-time: 50
+  ## 限制访问时间(毫秒)
+  limited_time_millis: 180000
+
