@@ -24,20 +24,11 @@ datasource:
   db:
     driver-class-name: com.mysql.jdbc.Driver
     jdbc-url: jdbc:mysql://localhost:3306/dianwanjia_official_website?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull
-    username: root
-    password: xykj./
+    username: weixindb
+    password: lnWb3aoBrIyH
 
 spring.application.name: pro.dianwanjia.official.website
 
 logging:
     level:
         pro.dianwanjia.official.website: DEBUG
-
-# 请求限制过滤器配置
-request:
-  ## 最小安全时间(毫秒)
-  min-safe-time-millis: 5000
-  ## 最大访问次数
-  maximum-visit-time: 50
-  ## 限制访问时间(毫秒)
-  limited_time_millis: 180000
