@@ -24,8 +24,8 @@ datasource:
   db:
     driver-class-name: com.mysql.jdbc.Driver
     jdbc-url: jdbc:mysql://localhost:3306/dianwanjia_official_website?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull
-    username: root
-    password: xykj./
+    username: weixindb
+    password: lnWb3aoBrIyH
 
 spring.application.name: pro.dianwanjia.official.website
 
